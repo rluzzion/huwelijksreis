@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Plan onze huwelijksreis: sleep het vliegtuig naar een bestemming op de wereldkaart."
+    />
+    <title>Huwelijksreis — Kies onze bestemming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">Huwelijksreis Robin en Liz</a>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h1>Waar gaan we heen?</h1>
+        <p>
+          Sleep het vliegtuig naar een bestemming op de kaart. Laat los om die
+          plek te openen.
+        </p>
+        <p class="hint">Tip: op mobiel werkt slepen met je vinger.</p>
+      </section>
+
+      <section class="map-section" aria-label="Wereldkaart met bestemmingen">
+        <div
+          id="map-stage"
+          class="map-stage"
+          role="application"
+          aria-label="Sleep het vliegtuig naar een bestemming"
+        >
+          <img class="map-image" src="assets/world_map.png" alt="Wereldkaart" />
+
+          <button
+            type="button"
+            class="hotspot"
+            style="left: 10%; top: 42%"
+            data-href="bestemmingen/hawaii-usa.html"
+            data-label="Hawaii / USA"
+            aria-label="Ga naar Hawaii / USA"
+          ></button>
+          <button
+            type="button"
+            class="hotspot"
+            style="left: 72%; top: 50%"
+            data-href="bestemmingen/malediven-thailand.html"
+            data-label="Malediven / Thailand"
+            aria-label="Ga naar Malediven / Thailand"
+          ></button>
+          <button
+            type="button"
+            class="hotspot"
+            style="left: 58%; top: 58%"
+            data-href="bestemmingen/seychellen-afrika.html"
+            data-label="Seychellen / Afrika"
+            aria-label="Ga naar Seychellen / Afrika"
+          ></button>
+          <button
+            type="button"
+            class="hotspot"
+            style="left: 82%; top: 40%"
+            data-href="bestemmingen/taiwan-china.html"
+            data-label="Taiwan / China"
+            aria-label="Ga naar Taiwan / China"
+          ></button>
+          <button
+            type="button"
+            class="hotspot"
+            style="left: 80%; top: 58%"
+            data-href="bestemmingen/indonesie.html"
+            data-label="Indonesië"
+            aria-label="Ga naar Indonesië"
+          ></button>
+          <button
+            type="button"
+            class="hotspot"
+            style="left: 90%; top: 75%"
+            data-href="bestemmingen/nieuw-zeeland-australie.html"
+            data-label="Nieuw-Zeeland / Australië"
+            aria-label="Ga naar Nieuw-Zeeland / Australië"
+          ></button>
+
+          <div
+            id="plane"
+            class="plane"
+            role="img"
+            aria-label="Vliegtuig — sleep naar een bestemming"
+            tabindex="0"
+          >
+
+            <div class="plane-placeholder" aria-hidden="true">✈</div>
+          </div>
+          <p class="plane-home-hint" aria-hidden="true">Sleep mij</p>
+        </div>
+
+        <div class="destinations-list">
+          <h2>Of kies een bestemming</h2>
+          <ul class="dest-grid">
+            <li>
+              <a class="dest-link" href="bestemmingen/hawaii-usa.html">
+                <img
+                  class="dest-thumb"
+                  src="assets/hawaii.png"
+                  alt=""
+                  width="52"
+                  height="52"
+                />
+                <div>
+                  <strong>Hawaii / USA</strong>
+                  <span>Pacific · stranden &amp; nationale parken</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="dest-link" href="bestemmingen/seychellen-afrika.html">
+                <img
+                  class="dest-thumb"
+                  src="assets/seychellen.png"
+                  alt=""
+                  width="52"
+                  height="52"
+                />
+                <div>
+                  <strong>Seychellen / Afrika</strong>
+                  <span>Indische Oceaan · safari &amp; strand</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="dest-link" href="bestemmingen/malediven-thailand.html">
+                <img
+                  class="dest-thumb"
+                  src="assets/malediven.png"
+                  alt=""
+                  width="52"
+                  height="52"
+                />
+                <div>
+                  <strong>Malediven / Thailand</strong>
+                  <span>Atollen · tempels &amp; eilanden</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="dest-link" href="bestemmingen/indonesie.html">
+                <img
+                  class="dest-thumb"
+                  src="assets/indonesie.png"
+                  alt=""
+                  width="52"
+                  height="52"
+                />
+                <div>
+                  <strong>Indonesië</strong>
+                  <span>Eilanden · tempels &amp; jungle</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="dest-link" href="bestemmingen/taiwan-china.html">
+                <img
+                  class="dest-thumb"
+                  src="assets/taiwan.png"
+                  alt=""
+                  width="52"
+                  height="52"
+                />
+                <div>
+                  <strong>Taiwan / China</strong>
+                  <span>Steden · cultuur &amp; eten</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                class="dest-link"
+                href="bestemmingen/nieuw-zeeland-australie.html"
+              >
+                <img
+                  class="dest-thumb"
+                  src="assets/nieuw_zeeland.png"
+                  alt=""
+                  width="52"
+                  height="52"
+                />
+                <div>
+                  <strong>Nieuw-Zeeland / Australië</strong>
+                  <span>Natuur · roadtrips &amp; avontuur</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Huwelijksreis Robin en Liz. All rights reserved. © 2026</p>
+    </footer>
+
+    <script src="js/map.js" defer></script>
+  </body>
+</html>
